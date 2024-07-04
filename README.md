@@ -1,35 +1,36 @@
-# Podcast Summarizer
+# PodBriefs - A Podcast Summarizer
 
-Welcome to the Podcast Summarizer project! This tool allows you to automatically summarize podcast episodes by providing the RSS feed URL of the podcast. The underlying technology involves utilizing various AI models to extract meaningful content from podcast episodes and present them in a summarized form.
+This project automatically summarizes podcast episodes using their RSS feed URLs. By leveraging AI models, it extracts key points and presents a concise summary.
 
-## Project Demo GIF
+## Project Demo
 
 <div align="center">
    <img src="content/podcast/podcast.gif" width="100%" max-width="800"/>
 </div>
 
-## Demo
+### Demo Walkthrough
 
-Here's a breakdown of what's happening in the demo GIF:
+In the demo, you can see the following steps:
 
-1. You open the app and navigate to the main page.
-2. Find a podcast RSS feed URL from [Listen Notes](https://www.listennotes.com) or [Castos](https://castos.com/tools/find-podcast-rss-feed/).
-3. You input the RSS feed URL of the podcast episode you want to summarize.
-4. You click the "Process a Podcast Feed" button.
-5. The app downloads the podcast episode in mp3 format.
-6. The WhisperX model transcribes the speech to text.
-7. The ChatGPT 3.5 Turbo model generates a summary.
-8. [5.](#demo), [6.](#demo) and [7.](#demo) are running using GPU in [Modal](https://modal.com) backend.
-9. The [Streamlit](https://streamlit.io) frontend displays the summary, episode details, guest info, and highlights.
+1. Launch the application and navigate to the main screen.
+2. Obtain an RSS feed URL for a podcast from [Listen Notes](https://www.listennotes.com) or [Castos](https://castos.com/tools/find-podcast-rss-feed/).
+3. Enter the RSS feed URL for the desired podcast episode.
+4. Click the "Process a Podcast Feed" button.
+5. The application downloads the podcast episode as an MP3 file.
+6. The WhisperX model transcribes the audio to text.
+7. The ChatGPT 3.5 Turbo model generates a summary from the text.
+8. These processes run on the [Modal](https://modal.com) backend using GPU.
+9. The summary, along with episode details, guest info, and highlights, is displayed on the [Streamlit](https://streamlit.io) frontend.
 
-Feel free to explore the interface and generate summaries for your favorite podcasts!
+Explore the interface and create summaries for your favorite podcasts!
 
 ## Features
 
-- **Automated Summarization:** Using the power of AI, this project can automatically download podcast episodes, transcribe the speech to text, and generate concise summaries.
-- **WhisperX for Transcription:** The project employs the WhisperX model to convert spoken words in podcast episodes into text.
-- **ChatGPT 3.5 Turbo for Summarization:** The OpenAI ChatGPT 3.5 Turbo model is used to create informative and coherent summaries based on the transcribed text.
-- **Frontend with Streamlit:** The summarized content, along with episode details, guest information, and highlights are presented through an interactive and user-friendly Streamlit frontend.
+- **Automated Summarization:** AI-driven process to download, transcribe, and summarize podcast episodes.
+- **WhisperX for Transcription:** Converts spoken content into text.
+- **ChatGPT 3.5 Turbo for Summarization:** Provides coherent summaries from the transcribed text.
+- **Streamlit Frontend:** User-friendly interface displaying summaries, episode details, guest information, and highlights.
+
 
 ## Installation
 
@@ -53,7 +54,7 @@ To run this project locally, follow these steps:
    ```bash
    streamlit run podcast_frontend.py
 
-### Local Usage
+### Usage Intrustions
 
 1. Access the Streamlit frontend by opening a web browser and navigating to [http://localhost:8501](localhost:8501).
 2. On the homepage, you'll find an input field where you can paste the RSS feed URL of the podcast you want to summarize.
