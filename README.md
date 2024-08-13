@@ -2,11 +2,6 @@
 
 This project automatically summarizes podcast episodes using their RSS feed URLs. By leveraging AI models, it extracts key points and presents a concise summary.
 
-## Project Demo
-
-<div align="center">
-   <img src="content/podcast/podcast.gif" width="100%" max-width="800"/>
-</div>
 
 ### Demo Walkthrough
 
@@ -39,8 +34,8 @@ To run this project locally, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/tekeburak/podcast-summarizer.git
-   cd podcast-summarizer
+   git clone https://github.com/Mansi168/PodBriefs.git
+   cd PodBriefs
 
 2. Install the required dependencies using pip:
    ```bash
